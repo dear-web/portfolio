@@ -458,3 +458,230 @@
   width: 139px;
   background-color: #fff;
 }
+
+@media screen and (max-width:767px) {
+  .main_title {
+    margin-bottom: 24px;
+  }
+
+  .main_title span {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+
+  .main_title span:before {
+    width: 16px;
+    height: 16px;
+  }
+
+  .main_title h2 {
+    font-size: 20px;
+    margin-top: 8px;
+  }
+
+  .sec_main-intro {
+    padding-top: 120px;
+    padding-bottom: 22px;
+    min-height: 480px;
+    background-image: url(../img/mo_main_section_bg.png);
+  }
+
+  .intro_title {
+    padding-top: 44px;
+  }
+
+  .intro_title::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .intro_title h1 {
+    font-size: 24px;
+  }
+
+  .intro_title p {
+    margin-top: 4px;
+    font-size: 16px;
+  }
+
+  .intro_title .btn_link {
+    margin-top: 16px;
+    width: 103px;
+  }
+
+  .sec_main-info {
+    padding: 40px 0;
+  }
+
+  .info__list {
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  .info__list .info__item {
+    width: 100%;
+  }
+
+  .info__item .desc {
+    margin-bottom: 8px;
+  }
+
+  .info__item .desc h3 {
+    font-size: 18px;
+  }
+
+  .info__item .desc p {
+    font-size: 16px;
+    height: 48px;
+  }
+
+  .info__item .img {
+    height: 240px;
+  }
+  
+  .sec_main-products {
+    padding: 40px 0;
+  }
+
+  .product__content {
+    border-radius: 0px;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .product__list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .product__list .product__item {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+  }
+
+  .product__list .product__item::after {
+    content: none;
+  }
+
+  .product__item .tit {
+    margin-bottom: 16px;
+  }
+
+  .product__item .tit span {
+    font-size: 14px;
+  }
+
+  .product__item .tit h3 {
+    font-size: 18px;
+  }
+
+  .product__item ul {
+    border-radius: 8px;
+    padding: 16px;
+    min-height: 140px;
+    margin-bottom: 16px;
+  }
+
+  .product__item ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  .product__item .btn {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+
+  .review_card {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .review_card .review_reg {
+    gap: 4px;
+  }
+
+  .review_card .review_reg .thum {
+    width: 40px;
+    height: 40px;
+  }
+  .review_card .review_reg .reg_name_dept span {
+    font-size: 16px;
+  }
+
+  .review_card .review_reg .reg_name_dept span.name::after {
+    font-size: 16px;
+    margin-left: 4px;
+    margin-right: 2px;
+  }
+  .review_card .review_cnt {
+    margin-top: 16px;
+  }
+  .review_card .review_cnt p {
+    font-size: 14px;
+  }
+  .sec_main-faq {
+    padding: 40px 0;
+  }
+
+  .faq__list .faq__item {
+    padding: 16px;
+    margin-bottom: 8px;
+    border-radius: 16px;
+  }
+
+  .faq__list .faq__item::after {
+    width: 16px;
+    height: 16px;
+    right: 16px;
+    top: 20px;
+    transform: translateY(0px);
+  }
+
+  .faq__item .question {
+    gap: 4px;
+  }
+  
+  .faq__item .question {
+    font-size: 14px;
+  }
+
+  .faq__item .question span {
+    font-size: 14px;
+  }
+
+  .faq__item .answer {
+    margin-top: 16px;
+  }
+
+  .faq__item .answer span {
+    font-size: 14px;
+  }
+
+  .faq__item .answer div {
+    font-size: 14px;
+  }
+
+  .sec_main-banner {
+    height: 191px;
+  }
+
+  .sec_main-banner h1 {
+    font-size: 20px;
+  }
+
+  .sec_main-banner p {
+    margin-top: 4px;
+    font-size: 14px;
+  }
+  .sec_main-banner .btn {
+    margin-top: 16px;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+  }
+}

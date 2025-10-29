@@ -38,8 +38,12 @@ body.fixed {
   width: 100%;
   height: 92px;
   z-index: 101;
-  background-color: transparent;
+  background-color: #fff;
   transition: 0.35s;
+}
+
+.header.transparent {
+  background-color: transparent;
 }
 
 .header__inner {  
@@ -98,10 +102,19 @@ nav.gnb ul li a {
   color: #111;
 }
 
-.header__btns .btn_purchase{
+.header__btns {
+  display: flex;
+  align-items: center;
+}
+
+.header__btns .btn_purchase {
   background-color: transparent;
   width: 103px;
   border-width: 2px;
+}
+
+.header__btns .btn_mo_menu {
+  display: none;
 }
 /* Footer */
 .footer {
@@ -187,7 +200,9 @@ nav.gnb ul li a {
   margin-top: 8px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 16px;
+  row-gap: 4px;
 }
 
 .footer_bottom .footer_info li {
@@ -239,28 +254,82 @@ nav.gnb ul li a {
 }
 /* Mobile */
 @media screen and (max-width:768px) {
-  .main {
-    padding-top: 64px;
-  }
-
   #wrap {
     padding-bottom: 237px;
   }
 
   .header {
-    height: 64px;
+    height: 56px;
   }
 
+  .header__inner {
+    padding: 0 16px;
+  }
+
+  .logo {
+    width: 49px;
+    height: 40px;
+  }
+  
+  nav.gnb {
+    display: none;
+  }
+
+  .header__btns .btn_purchase {
+    display: none;
+  }
+
+  .header__btns .btn_mo_menu {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url(../img/icon/icon_mo_menu.svg) no-repeat center / contain;
+  }
 
   .footer {
-    bottom: -237px;
-    height: 237px;
+    bottom: -261px;
+    height: 261px;
   }
 
   .footer__inner {  
-    flex-direction: column;
-    align-items: flex-start;
-    row-gap: 0px;
-    padding-top: 40px;
+    padding: 0 16px;
+    padding-top: 24px;
+  }
+  
+  .footer_top {
+    padding-bottom: 16px;
+  }
+
+  .footer_link {
+    gap: 4px;
+  }
+
+  .footer_link li {
+    padding-right: 4px;
+  }
+
+  .footer_link li a {
+    font-size: 14px;
+  }
+
+  .footer_bottom {
+    margin-top: 16px;
+  }
+
+  .footer_bottom p.company_nm {
+    font-size: 12px;
+  }
+
+  .footer_bottom .footer_info {
+    margin-top: 4px;
+  }
+
+  .footer_bottom .footer_info li {
+    font-size: 12px;
+  }
+
+  .footer_bottom p.copyright {
+    margin-top: 16px;
+    font-size: 12px;
   }
 }

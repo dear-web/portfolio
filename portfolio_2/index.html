@@ -29,7 +29,7 @@
 </head>
 <body>
   <div id="wrap">
-    <header class="header">
+    <header class="header transparent">
       <div class="header__inner">
         <div class="header__logo-gnb">
           <a href="./index.html" class="logo">
@@ -46,6 +46,7 @@
         </div>
         <div class="header__btns">
           <a href="#" class="btn btn-md btn_outline_primary btn_round btn_purchase">구매하기</a>
+          <button type="button" class="btn_mo_menu"></button>
         </div>
       </div>
     </header>
@@ -470,6 +471,14 @@
     </footer>
   </div>
   <script>
+    $(window).on("scroll", function () {
+    if ($(this).scrollTop() >= 140) {
+      $(".header").removeClass("transparent");
+    } else {
+      $(".header").addClass("transparent");
+    }
+  });
+
     $(function() {
       $('.faq__item').click(function() {
         const $currenItem = $(this);
@@ -496,12 +505,16 @@
             slidesPerView: 1.1,
             spaceBetween: 20,
           },
+          600: {
+            slidesPerView: 2.5,
+            spaceBetween: 20,
+          },
           768: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 20,
           },
           1024: {
-            slidesPerView: 3.9, 
+            slidesPerView: 3.5, 
             spaceBetween: 24,
           },
         },
