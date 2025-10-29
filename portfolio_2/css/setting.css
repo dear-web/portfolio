@@ -1,7 +1,7 @@
 @charset "UTF-8";
 :root {
   /* color */
-  --color-primary: #481E0D;
+  --color-primary: #354CD3;
 }
 
 /* Button */
@@ -14,13 +14,24 @@
 .btn-md {
   height: 48px;
   line-height: 48px;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .btn-lg {
   height: 52px;
   line-height: 52px;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn_primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.btn_round {
+  border-radius: 800px;
 }
 
 .btn-w100p {
@@ -31,30 +42,11 @@
   padding: 0 16px;
 }
 
-.btn_link {
-  border-radius: 500px;
+.btn_outline_primary {
   background-color: #fff;
-  padding: 0 24px;
-  transition: .35s;
-  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
-}
-
-.btn_link span {
-  font-size: 18px;
-  font-weight: 500;
   color: var(--color-primary);
+  border: 1px solid var(--color-primary);
 }
-
-.btn_link:hover {
-  background-color: #481E0D;
-  color: #fff;
-  box-shadow: none;
-}
-
-.btn_link:hover span {
-  color: #fff;
-}
-
 
 /* #### Modal #### */
 .modal {
